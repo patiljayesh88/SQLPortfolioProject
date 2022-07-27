@@ -7,3 +7,20 @@ INSERT INTO groceries VALUES(5, "Cherries", 6, 2);
 INSERT INTO groceries VALUES(6, "Chocolate syrup", 1, 4);
 
 SELECT SUM(quantity) FROM groceries;
+
+/* Here i a, doimg a small project now */
+
+CREATE TABLE CarCollection ( ID INTEGER PRIMARY KEY , make TEXT, model TEXT , launch INTEGER );
+
+insert into CarCollection VALUES (1 , "Honda" , "AMAZE" , 2010);
+insert into CarCollection VALUES (2, "Suzuki" , "Dzire" , 2008);
+insert into CarCollection VALUES (3, "Hyundai" , "Aura" , 2020);
+insert into CarCollection VALUES (4 , "mahindra" , "Logan" , 2010);
+insert into CarCollection VALUES (6 , "AstonMartin" , "Lagonda" , 2001);
+insert into CarCollection VALUES (5,"toyota" , "etios" , 2012);
+
+
+
+SELECT * FROM CarCollection order by make ;
+select * from CarCollection where launch>2010;
+
